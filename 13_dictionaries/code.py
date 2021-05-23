@@ -4,6 +4,8 @@ friend_ages["Bob"] = 20
 
 print(friend_ages)  # {'Rolf': 24, 'Adam': 30, 'Anne': 27, 'Bob': 20}
 print(friend_ages["Bob"])
+print(f"Keys : {friend_ages.keys()}")
+print(f"Values : {friend_ages.values()}")
 
 # -- List of dictionaries --
 
@@ -20,7 +22,7 @@ print(friends)
 student_attendance = {"Rolf": 96, "Bob": 80, "Anne": 100}
 
 for student in student_attendance:
-    print(f"{student}: {student_attendance[student]}")
+    print(f"(KEY){student}: (VALUE){student_attendance[student]}")
 
 # Better
 
@@ -30,7 +32,7 @@ for student, attendance in student_attendance.items():
 # -- Using the `in` keyword --
 
 if "Bob" in student_attendance:
-    print(f"Bob: {student_attendance[student]}")
+    print(f"Bob found and value: {student_attendance[student]}")
 else:
     print("Bob isn't a student in this class!")
 

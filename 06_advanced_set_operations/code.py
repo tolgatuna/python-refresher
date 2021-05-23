@@ -21,7 +21,7 @@ abroad = {"Bob", "Anne"}
 # If we have 1 local friend and 2 abroad friends, we could calculate the total friends by using `.union`
 
 friends = local.union(abroad)
-print(friends)
+print(f'Friends: {friends}')
 
 # -- Intersection of two sets --
 
@@ -31,4 +31,4 @@ science = {"Bob", "Jen", "Adam", "Anne"}
 # Given these two sets of students, we can calculate those who do both art and science by using `.intersection`
 
 both = art.intersection(science)
-print(both)
+print(f"Intersection: {both}")

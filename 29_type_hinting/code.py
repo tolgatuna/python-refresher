@@ -12,7 +12,6 @@ class Book:
 
 
 # -- Lists and collections --
-
 from typing import List  # , Tuple, Set, etc...
 
 
@@ -30,6 +29,8 @@ book = Book(
     "Harry Potter", "352"
 )  # Suggests this is incorrect if you have a tool that will analyse your code (e.g. PyCharm or Pylint)
 shelf = BookShelf(book)  # Suggests this is incorrect too
+
+
 # Type hinting is that: hints. It doesn't stop your code from working... although it can save you at times!
 
 # -- Hinting the current object --

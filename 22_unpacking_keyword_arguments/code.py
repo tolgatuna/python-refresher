@@ -1,6 +1,6 @@
 # -- Unpacking kwargs --
 def named(**kwargs):
-    print(kwargs)
+    print(f'Unpacking Kwargs: {kwargs}')
 
 
 named(name="Bob", age=25)
@@ -11,21 +11,16 @@ named(**{"name": "Bob", "age": 25})
 
 
 # -- Unpacking and repacking --
-def named(**kwargs):
-    print(kwargs)
-
-
 def print_nicely(**kwargs):
     named(**kwargs)  # Unpack the dictionary into keyword arguments.
     for arg, value in kwargs.items():
-        print(f"{arg}: {value}")
+        print(f"(Arg){arg}: (Val){value}")
 
 
 print_nicely(name="Bob", age=25)
 
 
 # -- Both args and kwargs --
-
 
 def both(*args, **kwargs):
     print(args)
